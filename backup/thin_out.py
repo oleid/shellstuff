@@ -2,6 +2,9 @@
 
 ## not sure, what's broken in python2
 
+## TODO: add possibility to load BackupAgeFreqDist from
+##       a file in the root of the backup directory
+
 from __future__ import print_function  # for python2
 from os         import chdir, path
 from glob       import iglob
