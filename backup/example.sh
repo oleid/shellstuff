@@ -33,12 +33,9 @@ fi
 
 
 # doBackup "directory below $BACKUP_PREFIX" "rsync source"
-#doBackup "hercules_home" "home-srv::home"
-#doBackup "hercules"      "home-srv::root"
-doBackup "alef"          "alef::root"
+#doBackup "alef"          "alef::root"
 #doBackup "alef_var"      "alef::var"
-#doBackup "durga"         "durga::root"
-#doBackup "hercules_client"  "home-srv::client"
+#doBackup "mirr-srv2"     "/mnt/root/"
 
 echo "End of backup: $(date)"
 echo
