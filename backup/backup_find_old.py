@@ -17,11 +17,14 @@ DATE_FORMAT = "%Y-%m-%d@%H:%M:%S"
 VERBOSE     = False
 
 # maximum age in days ==> maximal number of backups per month
-BackupAgeFreqDist = {   182 : 31,
-                      1*365 : 20, 
-                      2*356 : 15, 
-                      3*365 : 1, 
-                      4*365 : 1.0/12 }
+# btrfs doesn't like too many snapshots
+BackupAgeFreqDist = {    62 : 31,
+                        124 : 15,
+                        240 : 10,
+                        365 : 5,
+                    1.5*356 : 2,
+                      2*365 : 1,
+                      3*365 : 1.0/12 }
 
 ##############################################################################
 
