@@ -46,7 +46,7 @@ function doBackup {
     if [ ! -z "${BACKUP_SOURCE}" ] ; then
         echo "Doing a backup of $1, creating a read-only snapshot to $NEW_BACKUP"
 
-        rsync -ax --delete ${EXTRA_OPTIONS} ${BACKUP_SOURCE} ${RSYNC_DEST}
+        rsync -ax --delete ${EXTRA_OPTIONS} $3 ${BACKUP_SOURCE} ${RSYNC_DEST}
         exit_code=$?
 
         case $exit_code in
